@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawSome Pet Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/logo.png" alt="PawSome Logo" class="me-2" style="height: 40px;">
+                PawSome
+            </a>
+            <a class="navbar-brand" href="index.html">PawSome</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="search-container me-3">
+                    <input type="text" class="form-control" id="searchInput" placeholder="Search products...">
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+                <div class="cart-icon">
+                    <a href="cart.html" class="btn btn-outline-primary">
+                        🛒 Cart (<span id="cart-count">0</span>)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay">
+            <div class="container">
+                <div class="row align-items-center min-vh-100">
+                    <div class="col-md-6">
+                        <h1>Welcome to PawSome</h1>
+                        <p class="lead">Your one-stop shop for all pet needs</p>
+                        <a href="shop.html" class="btn btn-primary btn-lg">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Shop by Pet</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="category-card">
+                        <img src="img/dog.webp" alt="Dogs" class="img-fluid">
+                        <h3>Dogs</h3>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="category-card">
+                        <img src="img/cat.jpg" alt="Cats" class="img-fluid">
+                        <h3>Cats</h3>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="category-card">
+                        <img src="img/birds.jpg" alt="Birds" class="img-fluid">
+                        <h3>Birds</h3>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="category-card">
+                        <img src="img/fish.webp" alt="Fish" class="img-fluid">
+                        <h3>Fish</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Featured Products</h2>
+            <div class="row g-4" id="featured-products">
+                <!-- Products will be loaded via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Happy Customers</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <img src="img/t1.jpg" alt="Customer 1" class="img-fluid rounded-circle mb-3">
+                        <p>"Great products for my dog! Will definitely shop here again."</p>
+                        <p class="customer-name">- John D.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <img src="img/t2.webp" alt="Customer 2" class="img-fluid rounded-circle mb-3">
+                        <p>"Amazing selection of cat toys. My kitty loves them!"</p>
+                        <p class="customer-name">- Sarah M.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <img src="img/t3.jpg" alt="Customer 3" class="img-fluid rounded-circle mb-3">
+                        <p>"Best pet store in town. Excellent customer service!"</p>
+                        <p class="customer-name">- Mike R.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>PawSome Pet Store</h5>
+                    <img src="img/logo.png" alt="PawSome Logo" class="me-2" style="height: 40px;">
+                    <p>Your trusted partner in pet care</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: info@pawsome.com<br>
+                    Phone: (555) 123-4567</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

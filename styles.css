@@ -1,0 +1,185 @@
+/* General Styles */
+body {
+    padding-top: 56px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.hero {
+    position: relative;
+    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover; /* Ensure the path is correct */
+    min-height: 100vh; /* Full viewport height */
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2; /* Ensure content is above the overlay */
+}
+
+/* Category Cards */
+.category-card {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: white;
+    transition: transform 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-card img {
+    width: 100%;
+    height: 150px; /* Smaller height for uniformity */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.testimonial-card img {
+    width: 80px; /* Smaller size for circular images */
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%; /* Circular images */
+    margin-bottom: 15px;
+}
+
+.customer-name {
+    font-style: italic;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ddd;
+}
+
+footer img {
+    width: 100px; /* Smaller logo size */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Cart Icon */
+.cart-icon {
+    position: relative;
+    margin-left: 1rem;
+}
+
+/* Search Bar */
+.search-container {
+    position: relative;
+    max-width: 300px;
+}
+
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+}
+
+.search-results.active {
+    display: block;
+}
+
+.search-result-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.search-result-item:hover {
+    background: #f8f9fa;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero {
+        padding: 50px 0;
+    }
+
+    .search-container {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+}
+/* Product Card Styling */
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background: white;
+    transition: transform 0.3s;
+    text-align: center; /* Center-align content */
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%; 
+    max-width: 150px;
+    height: 150px; 
+    object-fit: cover; 
+    margin: 0 auto 10px; 
+    display: block; 
+}
+
+.product-card h3 {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
